@@ -1,95 +1,78 @@
-# QA Portfolio Website
+# Farouk Popoola — QA Automation Engineer Portfolio
 
-A modern, responsive single-page portfolio website for a Quality Assurance Engineer.
+This is my personal professional portfolio built as a modern, high-performance web application utilizing **Next.js (App Router)** and **Vanilla CSS**. It showcases my 5+ years of experience in Quality Assurance (banking and fintech sectors), automation frameworks, API validation suites, load testing setups, and CI/CD quality gate pipelines.
 
-## 🚀 Features
+---
 
-- Sleek dark theme with green/blue accent colors
-- Fully responsive (mobile, tablet, desktop)
-- Smooth scroll navigation + mobile hamburger menu
-- Scroll-reveal animations
-- Six sections: Hero, About, Skills, Experience, Projects, Contact
-- Working contact form (uses `mailto:` fallback)
-- Zero dependencies — pure HTML, CSS, and JavaScript
+## 💻 Tech Stack & Features
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router & React) for fast page loading, optimal SEO, and modular codebase.
+- **Styling**: Pure Vanilla CSS utilizing sleek CSS variables, harmony-curated dark mode theme, glassmorphic navigations, and fluid responsive grids.
+- **Typography**: Zero-latency Google Fonts loaded via native Next.js `next/font/google` (`Inter` & `JetBrains Mono`).
+- **Animations**: Custom client-side [Intersection Observer scroll-reveal wrapper](file:///Users/mac/Documents/QA-Portfolio/components/RevealOnScroll.js) that triggers beautiful slides and opacity transitions dynamically as sections/cards enter the viewport.
+- **Form Handling**: Client-side React form state management with a dynamic fallback `mailto` trigger for secure and reliable communications.
+
+---
 
 ## 📁 Project Structure
 
-```
+```text
 QA-Portfolio/
-├── index.html      # Main HTML
-├── styles.css      # All styling
-├── script.js       # Interactivity
-└── README.md       # This file
+├── app/
+│   ├── globals.css     # Premium styling system, layout utilities, animations & responsive grids
+│   ├── layout.js       # Core layout setting local fonts, meta tags, and global search/SEO descriptors
+│   └── page.js         # Entry page assembling all modular section components
+├── components/
+│   ├── Navbar.js       # Responsive glass navbar with sticky scroll triggers and mobile hamburger toggle
+│   ├── Hero.js         # Landing banner displaying roles, quick summaries, and statistics overview
+│   ├── About.js        # Professional background summaries and mock QA testing terminal widget
+│   ├── Skills.js       # Dynamic grid categorizing and listing manual/automated/API/Devops tools
+│   ├── Experience.js   # Interactive and vertical timeline of professional QA milestones
+│   ├── Projects.js     # Featured QA automation repositories and link assets
+│   ├── Contact.js      # Controlled state contact form and connection anchors
+│   ├── Footer.js       # Hydration-safe dynamic copyright footer
+│   └── RevealOnScroll.js # Reusable Intersection Observer wrapper for animating viewport entrances
+├── jsconfig.json       # Alias path maps configured to ease importing modular directories
+├── next.config.mjs     # Custom Next.js optimization parameters
+├── package.json        # Node dependency manifest and running script commands
+└── README.md           # This file
 ```
 
-## 🛠️ How to Run Locally
+---
 
-Just open `index.html` in your browser:
+## 🛠️ How to run locally
 
+### 1. Install Dependencies
+
+Install all standard Next.js and React modules:
 ```bash
-open index.html
+npm install
 ```
 
-Or serve it via a tiny local server:
+### 2. Run the Development Server
 
+Start a hot-reloading development server:
 ```bash
-# With Python
-python3 -m http.server 8000
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) (or the port specified by the terminal) to view the live site.
 
-# With Node
-npx serve .
+### 3. Build for Production
+
+Compile and optimize the application into static HTML and client bundles:
+```bash
+npm run build
 ```
 
-Then open http://localhost:8000
-
-## ✏️ How to Customize
-
-### 1. Personal Info
-
-In `index.html`, replace:
-
-- `Your Name` — with your real name
-- `your.email@example.com` — with your real email
-- `linkedin.com/in/yourprofile` — with your LinkedIn
-- `github.com/yourusername` — with your GitHub
-
-### 2. About Section
-
-Edit the paragraphs inside `<section id="about">` to tell your story.
-
-### 3. Skills
-
-Modify the skill cards in `<section id="skills">` to match your stack.
-
-### 4. Experience
-
-Update the `.timeline-item` blocks with your real work history.
-
-### 5. Projects
-
-Replace each `.project-card` with your real testing projects, GitHub links, and case studies.
-
-### 6. Colors / Theme
-
-Change CSS variables at the top of `styles.css`:
-
-```css
-:root {
-  --primary: #00d9a3; /* main accent (green) */
-  --accent: #6c8cff; /* secondary accent (blue) */
-  --bg: #0a0e1a; /* page background */
-}
+To run the compiled production build locally:
+```bash
+npm run start
 ```
+
+---
 
 ## 🚢 Deployment
 
-Easily deploy this static site to:
-
-- **GitHub Pages** — push to a repo and enable Pages
-- **Netlify** — drag & drop the folder at https://app.netlify.com/drop
-- **Vercel** — `vercel` CLI or import from GitHub
-- **Cloudflare Pages** — connect a GitHub repo
-
-## 📝 License
-
-Free to use and modify for personal portfolio use.
+The portfolio is pre-configured and fully optimized to deploy seamlessly to:
+- **Vercel** — Simply connect the repository to your Vercel Dashboard for instant, high-performance deployments on every git commit.
+- **Netlify** — Connect and configure the project setting build command as `npm run build` and directory as `.next` or `out`.
