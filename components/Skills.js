@@ -3,34 +3,44 @@ import RevealOnScroll from "./RevealOnScroll";
 export default function Skills() {
   const skillCategories = [
     {
-      icon: "🧪",
-      title: "Manual Testing",
-      tags: ["Functional", "Regression", "Smoke", "Sanity", "UAT", "Exploratory"],
-    },
-    {
       icon: "⚙️",
       title: "Test Automation",
-      tags: ["Cypress", "Playwright", "WebDriverIO", "Test Sigma", "Selenium"],
+      tags: ["Cypress", "Playwright", "WebdriverIO", "Test Sigma"],
     },
     {
       icon: "🔌",
       title: "API Testing",
-      tags: ["Postman", "Swagger", "REST Assured", "SoapUI"],
+      tags: ["Postman", "Swagger"],
     },
     {
       icon: "📊",
-      title: "Performance",
-      tags: ["JMeter", "k6", "Gatling"],
+      title: "Performance & Load",
+      tags: ["JMeter"],
     },
     {
       icon: "🔄",
       title: "CI/CD & DevOps",
-      tags: ["Jenkins", "GitHub Actions", "Kubernetes", "Docker"],
+      tags: ["Jenkins", "GitHub Actions", "Kubernetes (working knowledge)"],
+    },
+    {
+      icon: "🧪",
+      title: "Testing Practice",
+      tags: ["Functional", "Regression", "Integration", "UAT", "Smoke", "Sanity", "System", "SDLC/STLC", "Defect Lifecycle"],
+    },
+    {
+      icon: "📋",
+      title: "Test Management",
+      tags: ["Jira", "Azure DevOps", "Trello", "GitLab", "Zoho Projects", "Agile/Scrum"],
+    },
+    {
+      icon: "🤖",
+      title: "AI-Assisted Testing",
+      tags: ["ChatGPT", "Claude", "Test Case Design", "Script Drafting", "Bug Reports"],
     },
     {
       icon: "💻",
-      title: "Languages & Tools",
-      tags: ["JavaScript", "Jira", "GitLab", "Git", "Trello", "Azure"],
+      title: "Other",
+      tags: ["JavaScript", "Excel (PivotTables, VLOOKUP)", "Data Analysis", "Technical Writing"],
     },
   ];
 

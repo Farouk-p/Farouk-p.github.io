@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Farouk Popoola — QA Automation Engineer",
+  title: "Farouk Popoola — QA Engineer",
   description:
-    "Portfolio of Farouk Popoola, a QA Automation Engineer specializing in web and mobile automation, API testing, and performance testing.",
+    "Portfolio of Farouk Popoola, a QA Engineer specializing in web and mobile automation, API testing, and performance testing.",
   keywords: [
     "QA Automation",
     "QA Engineer",
